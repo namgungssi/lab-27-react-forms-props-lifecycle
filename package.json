@@ -18,15 +18,16 @@
     "react-dom": "^16.2.0",
     "resolve-url-loader": "^2.2.1",
     "sass-loader": "^6.0.6",
+    "superagent": "^3.8.2",
     "webpack": "^3.10.0",
     "webpack-dev-server": "^2.9.7"
   },
   "devDependencies": {},
   "scripts": {
-   "test": "jest",
-   "watch": "webpack-dev-server --inline --hot",
-   "watch-work": "webpack-dev-server --inline --hot --public $C9_HOSTNAME --host $IP --port $PORT",
-   "build": "webpack"
+    "test": "jest",
+    "watch": "webpack-dev-server --inline --hot",
+    "watch-work": "webpack-dev-server --inline --hot --public $C9_HOSTNAME --host $IP --port $PORT",
+    "build": "webpack"
   },
   "repository": {
     "type": "git",
