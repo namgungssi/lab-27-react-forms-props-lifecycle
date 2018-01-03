@@ -9,9 +9,7 @@ const ExtractPlugin = require('extract-text-webpack-plugin');
 
 module.exports = {
   entry: `${__dirname}/src/main.js`,
-
   devtool: 'source-map',
-
   output: {
     filename: 'bundle.[hash].js',
     path: `${__dirname}/build`
@@ -52,7 +50,6 @@ module.exports = {
           ]
         })
       },
-
     ]
   }
 
