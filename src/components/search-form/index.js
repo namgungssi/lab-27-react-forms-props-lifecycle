@@ -18,6 +18,7 @@ class RedditSearch extends React.Component {
   }
 
 
+
   handleSubmit(e) {
     e.preventDefault();
     let board = this.state.board;
@@ -26,14 +27,17 @@ class RedditSearch extends React.Component {
   }
 
 
+
   handleChange(e) {
     e.target.id === 'boardName' ? this.setState({board : e.target.value}):this.setState({limit : e.target.value})
   }
 
 
+
   render() {
     return (
       <div>
+
       <form onSubmit={this.handleSubmit}>
 
       <p>Enter Reddit import React from 'react';
@@ -66,6 +70,7 @@ class RedditSearch extends React.Component {
         render() {
           return (
             <div>
+
             <form onSubmit={this.handleSubmit}>
 
             <p>Enter Board Name</p>
@@ -81,10 +86,12 @@ class RedditSearch extends React.Component {
             <input type='submit'/>
 
             </form>
+
             </div>
           )
         }
       }
+
 
 
       export default RedditSearch;Name</p>
@@ -93,10 +100,14 @@ class RedditSearch extends React.Component {
       <br></br>
 
       <input type='submit'/>
+
       </form>
+
       </div>
     )
   }
 }
+
+
 
 export default RedditSearch;
