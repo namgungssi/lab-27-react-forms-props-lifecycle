@@ -70,15 +70,15 @@ class RedditSearch extends React.Component {
 
             <p>Enter Board Name</p>
 
-            <input type='text' id='boardName' onChange={this.handleChange} />
+            <input type='text' id='boardName' onChange={this.handleChange}/>
 
             <p>Enter Number Of Post Displayed</p>
 
-            <input type='number' id='limit' onChange={this.handleChange} />
+            <input type='number' id='limit' onChange={this.handleChange}/>
 
             <br></br>
 
-            <input type='submit' />
+            <input type='submit'/>
 
             </form>
             </div>
@@ -88,11 +88,11 @@ class RedditSearch extends React.Component {
 
 
       export default RedditSearch;Name</p>
-      <input type='text' id='boardName' onChange={this.handleChange} />
+      <input type='text' id='boardName' onChange={this.handleChange}/>
 
       <br></br>
-      
-      <input type='submit' />
+
+      <input type='submit'/>
       </form>
       </div>
     )
