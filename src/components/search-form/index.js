@@ -6,10 +6,10 @@ import React from 'react';
 
 
 
-class RedditSearch extends React.Component {
-  constructor(props) {
+class RedditSearch extends React.Component{
+  constructor(props){
     super(props);
-    this.state = {
+    this.state={
       board: '',
       limit: '',
     }
@@ -19,7 +19,7 @@ class RedditSearch extends React.Component {
 
 
 
-  handleSubmit(e) {
+  handleSubmit(e){
     e.preventDefault();
     let board = this.state.board;
     let limit = this.state.limit;
@@ -28,24 +28,24 @@ class RedditSearch extends React.Component {
 
 
 
-  handleChange(e) {
+  handleChange(e){
     e.target.id === 'boardName' ? this.setState({board : e.target.value}):this.setState({limit : e.target.value})
   }
 
 
 
-  render() {
-    return (
+  render(){
+    return(
       <div>
 
       <form onSubmit={this.handleSubmit}>
 
       <p>Enter Reddit import React from 'react';
 
-      class RedditSearch extends React.Component {
-        constructor(props) {
+      class RedditSearch extends React.Component{
+        constructor(props){
           super(props);
-          this.state = {
+          this.state={
             board: '',
             limit: '',
           }
@@ -54,7 +54,7 @@ class RedditSearch extends React.Component {
         }
 
 
-        handleSubmit(e) {
+        handleSubmit(e){
           e.preventDefault();
           let board = this.state.board;
           let limit = this.state.limit;
@@ -62,13 +62,13 @@ class RedditSearch extends React.Component {
         }
 
 
-        handleChange(e) {
+        handleChange(e){
           e.target.id === 'boardName' ? this.setState({board : e.target.value}) : this.setState({limit : e.target.value})
         }
 
 
-        render() {
-          return (
+        render(){
+          return(
             <div>
 
             <form onSubmit={this.handleSubmit}>
