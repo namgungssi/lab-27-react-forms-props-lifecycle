@@ -3,48 +3,54 @@
 
 
 import React from 'react';
-import ReactDOM from 'react-dom';
-import superagent from 'superagent';
-import RedditSearch from './components/search-form';
-import SearchResults from './components/search-results-form';
+import ReactDom from 'react-dom';
+import Header from './components/header';
+import SearchForm from './components/searchForm';
+import SearchResults from './components/searchResultsList';
+import './style/main.scss';
 
 
 
 class App extends React.Component {
   constructor(props) {
-    super(props);
+    super(props)
+    this.getTopics = this.getTopics.bind(this);
     this.state = {
-      board: '',
-      posts: []
+      topics: [],
     }
-    this.getBoard = this.getBoard.bind(this);
   }
 
 
-
-  getBoard(board, limit) {
-    let searchFormLimit = limit || 10;
-    superagent.get(`https://www.reddit.com/r/${board}.json?limit=${searchFormLimit}`)
-      .then(results => {
-        this.setState({posts:results.body.data.children})
-        this.setState({board:board})
-      })
-        .catch(console.log)
+  componentDidMount() {
+    console.log("__STATE__", this.state);
   }
 
+
+  componentWillMount() {
+    this.setState({topics: []});
+  }
+
+
+  componentWillUnmount() {
+    this.setState({topics: []});
+  }
+
+  getTopics(boards, limit) {
+     let topics = (boards.body.data.children).slice(0, limit);
+     this.setState({topics});
+  }
 
 
   render() {
     return (
-      <div>
-        <h1>Reddit</h1>
-          <RedditSearch getBoard={this.getBoard}/>
-          <SearchResults posts={this.state.posts} board={this.state.board}/>
+      <div id="appWrapper">
+        <Header/>
+        <SearchForm getTopics={this.getTopics}/>
+        <SearchResults topics={this.state.topics}/>
       </div>
     )
   }
 }
 
 
-
-ReactDOM.render(<App />, document.getElementById('root'));
+ReactDom.render(<App/>, document.getElementById('root'));

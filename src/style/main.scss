@@ -1,0 +1,49 @@
+body {
+  background: ivory;
+  color: white;
+  font-size: 2em;
+}
+
+
+div {
+  background: ivory;
+  border-color: white;
+}
+
+
+#search {
+  align-items:center;
+  display:flex;
+  justify-content:center;
+  flex-direction:column;
+  width: 100%;
+  padding: .5em;
+}
+
+
+#submit {
+  margin: .5em;
+}
+
+
+input.error {
+  border-color: gray;
+}
+
+
+#appWrapper {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+
+a {
+  text-decoration: none;
+}
+
+
+#list li{
+  list-style-type: decimal;
+}
