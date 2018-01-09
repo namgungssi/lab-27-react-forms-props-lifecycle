@@ -5,7 +5,7 @@
 import React from 'react';
 import ReactDom from 'react-dom';
 import Header from './components/header';
-import SearchForm from './components/searchForm';
+import SearchForm from './components/searchFormList';
 import SearchResults from './components/searchResultsList';
 import './style/main.scss';
 
