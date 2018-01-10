@@ -13,9 +13,9 @@ div {
 
 #search {
   align-items:center;
-  display:flex;
-  justify-content:center;
-  flex-direction:column;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
   width: 100%;
   padding: .5em;
 }
@@ -45,5 +45,5 @@ a {
 
 
 #list li{
-  list-style-type: decimal;
+  list-style-type: upper-latin;
 }

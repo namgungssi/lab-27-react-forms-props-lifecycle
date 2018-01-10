@@ -10,6 +10,7 @@ import SearchResults from './components/searchResultsList';
 import './style/main.scss';
 
 
+
 class App extends React.Component {
   constructor(props) {
     super(props)

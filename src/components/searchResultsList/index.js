@@ -7,6 +7,7 @@ import ReactDom from 'react-dom';
 import PropTypes from 'prop-types';
 
 
+
 class searchResultList extends React.Component {
   constructor(props) {
     super(props);
